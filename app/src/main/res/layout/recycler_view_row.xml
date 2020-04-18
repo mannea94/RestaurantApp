@@ -4,36 +4,91 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_margin="8dp">
+    android:layout_margin="5dp"
+    android:background="@drawable/selector_shape">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
             android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            >
+        <TextView
+            android:id="@+id/textIME"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="IME"
+            android:textSize="20dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/selector_edit"
             />
 
         <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textGRAD"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
+            android:text="Grad"
+            android:textSize="18dp"
+            android:layout_margin="2dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/selector_edit"
 
             />
+
 
         <TextView
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textREJTING"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-
+            android:text="3.9"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:background="@drawable/selector_edit"
             />
 
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:longClickable="false"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_edit"
+            />
     </LinearLayout>
 
 

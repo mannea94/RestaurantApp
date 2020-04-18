@@ -16,6 +16,13 @@ public class Menu implements Serializable {
 
     }
 
+    public Menu(String link, String foodname, String price, boolean isveg){
+        this.link=link;
+        this.price=price;
+        this.foodname=foodname;
+        this.isveg=isveg;
+    }
+
     public String getFoodname() {
         return foodname;
     }
@@ -26,5 +33,25 @@ public class Menu implements Serializable {
 
     public String getLink() {
         return link;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setFoodname(String foodname) {
+        this.foodname = foodname;
+    }
+
+    public void setIsveg(boolean isveg) {
+        this.isveg = isveg;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public boolean isIsveg() {
+        return isveg;
     }
 }

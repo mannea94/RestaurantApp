@@ -2,22 +2,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/wallpaper3"
     >
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
         />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonADD"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="ADD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/add"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
         />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/selector_edit"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="Добрeдојдовте!"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:paddingHorizontal="5dp"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        />
+
+
+
+
 
 
 

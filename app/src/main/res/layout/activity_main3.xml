@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manne.restaurantapp.RestoranDetailsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper3">
+
+    <LinearLayout
+        android:id="@+id/currentRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_shape"
+        android:layout_margin="5dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center|left"
+        >
+
+        <TextView
+            android:id="@+id/imeRES"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/selector_edit"
+            android:text="text"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:id="@+id/mesto"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="16dp"
+            android:background="@drawable/selector_edit"
+            android:text="text"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/rejting"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="16dp"
+            android:background="@drawable/selector_edit"
+            android:text="text"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_shape"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textTopic"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_edit"
+            android:text="Добрeдојдовте!"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2dp"
+            android:textStyle="italic"
+            android:singleLine="true"
+            android:gravity="center|left"
+            android:paddingHorizontal="5dp"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+
+
+        <ImageButton
+            android:id="@+id/buttonInfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/info"/>
+
+        <ImageButton
+            android:id="@+id/buttonGallery"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gallery"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonADD"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/add2"
+            android:text="ADD"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

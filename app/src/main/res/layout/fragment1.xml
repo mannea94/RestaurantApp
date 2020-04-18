@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper3"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/nameFood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_edit"
+        android:textSize="25dp"
+        android:text="Hamburger"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/selector_shape"
+        android:padding="5dp"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:id="@+id/priceFood"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_edit"
+        android:textSize="25dp"
+        android:text="250"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

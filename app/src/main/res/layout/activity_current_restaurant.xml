@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageRestoran"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/selector_shape"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/linkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_edit"
+                android:layout_marginVertical="2dp"
+                android:paddingHorizontal="5dp"
+                />
+            <EditText
+                android:id="@+id/imeRestoran"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_edit"
+                android:layout_marginVertical="2dp"
+                android:paddingHorizontal="5dp"
+                />
+            <EditText
+                android:id="@+id/gradRestoran"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_edit"
+                android:layout_marginVertical="2dp"
+                android:paddingHorizontal="5dp"/>
+
+            <EditText
+                android:id="@+id/rejtingRestoran"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_edit"
+                android:inputType="numberDecimal"
+                android:layout_marginVertical="2dp"
+                android:paddingHorizontal="5dp"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonEDIT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:background="@drawable/save"/>
+
+
+
+</LinearLayout>
